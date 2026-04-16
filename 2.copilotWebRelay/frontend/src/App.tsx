@@ -2,7 +2,7 @@ import { useState, useRef, useEffect, useCallback, type FormEvent } from 'react'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import rehypeHighlight from 'rehype-highlight'
-import 'highlight.js/styles/github-dark.css'
+import 'highlight.js/styles/github.css'
 import './App.css'
 
 interface Message {

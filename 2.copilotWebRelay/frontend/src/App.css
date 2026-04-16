@@ -12,14 +12,15 @@
   align-items: center;
   justify-content: space-between;
   padding: 16px 24px;
-  background: #16213e;
-  border-bottom: 1px solid #2a2a4a;
+  background: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .header h1 {
   font-size: 18px;
   font-weight: 600;
-  color: #e0e0e0;
+  color: #1a1a2e;
   margin: 0;
 }
 
@@ -28,14 +29,14 @@
   align-items: center;
   gap: 8px;
   font-size: 13px;
-  color: #888;
+  color: #666;
 }
 
 .status-dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #666;
+  background: #ccc;
 }
 
 .status-dot.connected {
@@ -73,7 +74,7 @@
 }
 
 .messages::-webkit-scrollbar-thumb {
-  background: #3a3a5a;
+  background: #c0c0c0;
   border-radius: 3px;
 }
 
@@ -82,7 +83,7 @@
   align-items: center;
   justify-content: center;
   height: 100%;
-  color: #555;
+  color: #999;
   font-size: 16px;
 }
 
@@ -109,16 +110,16 @@
 }
 
 .message.user .message-bubble {
-  background: #0f3460;
-  color: #e0e0e0;
+  background: #0969da;
+  color: #ffffff;
   border-bottom-right-radius: 4px;
 }
 
 .message.assistant .message-bubble {
-  background: #1f1f3a;
-  color: #d0d0d0;
+  background: #ffffff;
+  color: #24292f;
   border-bottom-left-radius: 4px;
-  border: 1px solid #2a2a4a;
+  border: 1px solid #d0d7de;
 }
 
 /* Markdown content */
@@ -134,7 +135,7 @@
 .message-bubble h2,
 .message-bubble h3,
 .message-bubble h4 {
-  color: #e0e0e0;
+  color: #1a1a2e;
   margin: 16px 0 8px;
 }
 
@@ -155,7 +156,7 @@
 }
 
 .message-bubble a {
-  color: #60a5fa;
+  color: #0969da;
   text-decoration: none;
 }
 
@@ -166,17 +167,18 @@
 .message-bubble code {
   font-family: 'Fira Code', 'Cascadia Code', 'JetBrains Mono', monospace;
   font-size: 13px;
-  background: #2a2a4a;
+  background: #f0f2f5;
   padding: 2px 6px;
   border-radius: 4px;
-  color: #e2b714;
+  color: #d63384;
 }
 
 .message-bubble pre {
   margin: 8px 0;
   padding: 12px;
-  background: #0d1117;
+  background: #f6f8fa;
   border-radius: 8px;
+  border: 1px solid #d0d7de;
   overflow-x: auto;
 }
 
@@ -191,8 +193,8 @@
 .message-bubble blockquote {
   margin: 8px 0;
   padding: 4px 12px;
-  border-left: 3px solid #3a3a5a;
-  color: #999;
+  border-left: 3px solid #d0d7de;
+  color: #666;
 }
 
 .message-bubble table {
@@ -203,14 +205,14 @@
 
 .message-bubble th,
 .message-bubble td {
-  border: 1px solid #3a3a5a;
+  border: 1px solid #d0d7de;
   padding: 6px 12px;
   text-align: left;
 }
 
 .message-bubble th {
-  background: #2a2a4a;
-  color: #e0e0e0;
+  background: #f0f2f5;
+  color: #1a1a2e;
 }
 
 /* Typing indicator */
@@ -223,7 +225,7 @@
 .typing-indicator span {
   width: 6px;
   height: 6px;
-  background: #666;
+  background: #999;
   border-radius: 50%;
   animation: typing 1.4s infinite;
 }
@@ -244,8 +246,8 @@
 /* Input area */
 .input-area {
   padding: 16px 24px;
-  background: #16213e;
-  border-top: 1px solid #2a2a4a;
+  background: #ffffff;
+  border-top: 1px solid #e0e0e0;
 }
 
 .input-form {
@@ -257,10 +259,10 @@
 .input-form input {
   flex: 1;
   padding: 12px 16px;
-  background: #1a1a2e;
-  border: 1px solid #2a2a4a;
+  background: #f5f5f5;
+  border: 1px solid #d0d7de;
   border-radius: 12px;
-  color: #e0e0e0;
+  color: #24292f;
   font-size: 15px;
   font-family: inherit;
   outline: none;
@@ -268,17 +270,17 @@
 }
 
 .input-form input:focus {
-  border-color: #0f3460;
+  border-color: #0969da;
 }
 
 .input-form input::placeholder {
-  color: #555;
+  color: #aaa;
 }
 
 .send-button {
   padding: 12px 20px;
-  background: #0f3460;
-  color: #e0e0e0;
+  background: #0969da;
+  color: #ffffff;
   border: none;
   border-radius: 12px;
   font-size: 15px;
@@ -289,7 +291,7 @@
 }
 
 .send-button:hover:not(:disabled) {
-  background: #1a4a8a;
+  background: #0550ae;
 }
 
 .send-button:disabled {
